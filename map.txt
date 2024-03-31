@@ -1,0 +1,16 @@
+mmmmmmmmmmm
+mmmmbbbmmmm
+mmmbcccbmmm
+mmbccddcbmm
+mmbcddcbmmm
+mmbcddccbmm
+mbcddedccbm
+mmbcddcbbmm
+mmmbbcbbmmm
+mmmmmbmmmmm
+mmmmmmmmmmm
+#m:tile_104.png
+#b:tile_071.png
+#c:tile_061.png
+#d:tile_040.png
+#e:tile_031.png
