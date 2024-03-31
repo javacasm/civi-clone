@@ -15,6 +15,17 @@ class World():
         self.world_map = []
         self.images_from_map = None
         
+        self.load_world_map()
+        
+        self.images = self.load_images()        
+
+
+        self.world = self.generate_world()
+        
+        self.images_from_map = None
+        
+
+    def load_world_map(self):
         file = open(MAP_FILE,'rt')
         for line in file.readlines():
             line = line.rstrip()
@@ -34,15 +45,6 @@ class World():
                     print(line[1:].rstrip())
                 values = line[1:].split(':')
                 self.images_from_map[values[0]]=values[1]
-        
-        self.images = self.load_images()        
-
-
-        self.world = self.generate_world()
-        
-        self.images_from_map = None
-        
-
     def generate_world(self):
         world = [] # list of lists (bidimensional)
         # every tile will be a dictionary with position (pixels), type and all the data needed
