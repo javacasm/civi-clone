@@ -1,3 +1,5 @@
+# isometric game pretending to be civilization-clone
+
 import pygame as pg
 from config import *
 from game import * 
